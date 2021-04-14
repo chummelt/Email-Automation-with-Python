@@ -31,7 +31,8 @@ import win32com.client as client
 import pathlib
 ```
 
-When using Outlook attachment, we have to use the absolute path. In this case, we are attaching a PDF calles 'Ethikvotum'. 
+When using Outlook attachment, we have to use the absolute path. In this case, we are attaching a PDF calles 'Ethikvotum'. Later on, we attach this PDF to our massage with ```message.Attachments.Add(ethik_absolute)```. For structural reasons, this is included in the main part of the code. 
+
 ```ruby
 ethik_path = pathlib.Path('Ethikvotum.pdf')
 ethik_absolute = str(ethik_path.absolute())
