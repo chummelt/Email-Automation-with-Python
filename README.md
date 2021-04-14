@@ -37,3 +37,11 @@ When using Outlook attachment, we have to use the absolute path. In this case, w
 ethik_path = pathlib.Path('Ethikvotum.pdf')
 ethik_absolute = str(ethik_path.absolute())
 ```
+Now, we use the **csv** file 'contact' that contains the email addresses and personalized links. If you have the additional name in the **csv** file, this would work the same way. 
+```ruby
+# open distribution list
+with open('contact.csv', 'r', newline='') as f:
+    reader = csv.reader(f)
+    distro = [row for row in reader] # (email, links)
+```
+
