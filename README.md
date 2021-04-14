@@ -69,13 +69,8 @@ for chunk in chunks:
 Now, we add the content of the mail in HTML format. You can use everything you want in HTML format, including images, changes of font and so on. 
 ```ruby
         html_body = """   
-        <pre><span class="pl-c">This is a very simple example, which includes an image from wikipedia.
-        <br />Do not forget to include your links, names or any other information you would want to include with '<span style="color: #339966;"><strong>{}</strong></span>'.
-        <br />Keep in mind that the placeholder for the link is now once used. So, you would need to use it once again or adjust <br />the <strong>'html_body.format(link,link)           </strong>' to <strong>'html_body.format(link)'</strong>.
-        <br />
-        <br />Good luck and have fun!<br />
-        <br /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Fender_Jazz-Bass_1966.jpg/320px-Fender_Jazz-Bass_1966.jpg" alt="Jazz Bass" width="320"                 height="940" />
-        <br /></span></pre>    """
+<pre><span class="pl-c">This is a very simple example, which includes an image from wikipedia.<br />Do not forget to include your links, names or any other information you would want to include with '<span style="color: #339966;"><strong>{}</strong></span>'.<br />Keep in mind that the placeholder for the link is now once used. So, you would need to use it once again or adjust <br />the <strong>'html_body.format(link,link)</strong>' to <strong>'html_body.format(link)'</strong>.<br /><br />Good luck and have fun!<br /><br /><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Fender_Jazz-Bass_1966.jpg/320px-Fender_Jazz-Bass_1966.jpg" alt="Jazz Bass" width="320" height="940" /><br /></span></pre>    """
+
 ```
 Now, each time we want to insert the individualized link (or individual name), include ```{}``` within the HTML string. 
 It is important to check the **order** in which you want to want to refer to the individual information. 
