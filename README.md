@@ -20,7 +20,8 @@ Requirement for this task:
 ```ruby
 pip install pywin32
 ```
-At first, we need to make sure that we use the right wd. You need to create a folder which contains all used files like the csv with contact info and the images. We also need to import the win32com library and dispatch an instance of Outlook. We also need to import csv for the contact information. Since we also want to sent out images, we need ti import pathlib, too. 
+At first, we need to make sure that we use the right wd. We need to create a folder which contains all used files like the csv with contact info and the images. We also need to import the win32com library and dispatch an instance of Outlook. 
+Now, import ```csv``` for the contact information. Since we also want to sent out images, we need to import ```pathlib```, too. 
 
 ```ruby
 import os
