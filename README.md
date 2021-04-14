@@ -10,11 +10,29 @@ The background of **this** project was to sent out mass emails for a research pr
 - **include different graphics** (png) like the institute logo and examples of how the data should look like. 
 - avoid the **sending limit** to not be identified as spam
 
+Therefore **this** project will include all of the above in the following. So, let's start!
+
 Requirement for this task: 
 
 - install Microsoft Outlook
 - install Python extensions for Microsoft Windows Provides access to much of the Win32 API: pywin32
 
-```
+```ruby
 pip install pywin32
+```
+At first, we need to make sure that we use the right wd. You need to create a folder which contains all used files like the csv with contact info and the images. We also need to import the win32com library and dispatch an instance of Outlook. We also need to import csv for the contact information. Since we also want to sent out images, we need ti import pathlib, too. 
+
+```ruby
+import os
+os.chdir("C:/Users/.../Mail")
+import csv
+from time import sleep
+import win32com.client as client
+import pathlib
+```
+
+When using Outlook attachment, we have to use the absolute path. In this case, we are attaching a PDF calles 'Ethikvotum'. 
+```ruby
+ethik_path = pathlib.Path('Ethikvotum.pdf')
+ethik_absolute = str(ethik_path.absolute())
 ```
