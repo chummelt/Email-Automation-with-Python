@@ -32,10 +32,10 @@ import win32com.client as client
 import pathlib
 ```
 
-When using Outlook attachment, we have to use the absolute path. In this case, we are attaching a PDF calles 'Ethikvotum'. Later on, we attach this PDF to our massage with ```message.Attachments.Add(ethik_absolute)```. For structural reasons, this is included in the main part of the code. 
+When using Outlook attachment, we have to use the absolute path. In this case, we are attaching a PDF called 'Ethicvotum'. Later on, we attach this PDF to our massage with ```message.Attachments.Add(#_absolute)```. For structural reasons, this is included in the main part of the code. 
 
 ```ruby
-ethic_path = pathlib.Path('Ethikvotum.pdf')
+ethic_path = pathlib.Path('Ethicvotum.pdf')
 ethic_absolut = str(ethic_path.absolut())
 ```
 Now, we use the **csv** file 'contact' that contains the email addresses and personalized links. If you have the additional name in the **csv** file, this would work the same way. 
