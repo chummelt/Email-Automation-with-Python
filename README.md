@@ -15,7 +15,7 @@ Therefore **this** project will include all of the above in the following. So, l
 Requirement for this task: 
 
 - install Microsoft Outlook
-- install Python extensions for Microsoft Windows Provides access to much of the Win32 API: pywin32
+- install Python extensions for Microsoft Windows Provides access to much of the Win32 API: **pywin32**
 
 ```ruby
 pip install pywin32
