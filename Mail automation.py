@@ -1,3 +1,5 @@
+###Email Automation with Python###
+
 import os
 os.chdir("C:/Users/.../Mail")
 import csv
