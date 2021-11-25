@@ -7,7 +7,7 @@ The background of **this** project was to sent out mass emails for a research pr
 - use **individualized links** in the mail, so each participant could upload their individual data
 - **include a certificate file** (pdf) in the attachment
 - **include html links** of several sites about the research project
-- **include different graphics** (png) like the institute logo and examples of how the data should look like. 
+- **include different graphics** (png) like the institute logo and examples of how the data should look like
 - avoid the **sending limit** to not be identified as spam
 
 Therefore **this** project will include all of the above in the following. So, let's start!
